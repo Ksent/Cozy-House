@@ -304,10 +304,6 @@ input[type="radio"] {
   top: 50%;
 }
 
-.pets label img {
-  padding-top: 22px;
-}
-
 .pets label[for="left"] {
   left: 0;
 }
