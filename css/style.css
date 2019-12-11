@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/bg.jpg);
+  background-color: #fafafa;
   background-repeat: no-repeat;
   font-family: "Arial", sans-serif;
   min-width: 1190px;
@@ -644,7 +644,7 @@ input[type="radio"] {
 }
 
 .page-two {
-  background-image: url(../img/bg_2.jpg);
+  background-color: #fafafa;
 } 
 
 .page-header {
