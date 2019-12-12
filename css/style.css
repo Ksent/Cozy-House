@@ -144,9 +144,8 @@ h2 {
 .pets label,
 .friend-pagination a,
 .modal a {
-  width: 51px;
-  height: 51px;
-  background-color: #f6f6f6;
+  width: 46px;
+  height: 46px;
   margin-top: 249px;
   border: 2px solid #f1cdb3;
   border-radius: 50%;
@@ -304,37 +303,23 @@ input[type="radio"] {
   top: 50%;
 }
 
-.pets label[for="left"] {
-  left: 0;
-}
-
-.pets label[for="left"]::after {
-  content: "";
-  width: 15px;
-  height: 7px;
-  background-image: url(../img/arrow.png);
-  background-repeat: no-repeat;
+.pets label svg {
   position: absolute;
   z-index: 20;
-  top: 45%;
-  left: 35%;
+  top: 35%;
+  left: 33%;  
+}
+
+.pets label[for="left"] {
+  left: 0;
 }
 
 .pets label[for="right"] {
   right: 0;
 }
 
-.pets label[for="right"]::after {
-  content: "";
-  width: 15px;
-  height: 7px;
-  background-image: url(../img/arrow.png);
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-  position: absolute;
-  z-index: 20;
-  top: 45%;
-  left: 36%;
+.pets label:hover path {
+  fill: #292929;
 }
 
 #left:focus ~ label[for="left"],
@@ -343,10 +328,13 @@ input[type="radio"] {
 }
 
 #left:checked ~ label[for="left"], 
-#right:checked ~ label[for="right"] {
+#right:checked ~ label[for="right"],
+#left:checked ~ label[for="left"] path,
+#right:checked ~ label[for="right"] path {
   border: 2px solid #fafafa;
   background-color: #f6f6f6;
   cursor: no-drop;
+  fill: #444444;
 }
 
 #left:checked ~ .pets-inner .pets-slides-wrapper {
@@ -781,6 +769,19 @@ to {
   margin-left: 15px;
 }
 
+.friend-pagination a:first-child {
+  margin: 0;
+}
+
+.friend-pagination a {
+  text-decoration: none;
+  color: #292929;
+}
+
+.friend-pagination .page-active {
+  background-color: #f1cdb3;
+}
+
 .friend-pagination-bullets {
   width: 27px;
   border: none;	
@@ -799,20 +800,6 @@ to {
 
 .friend-pagination-bullets div:first-child {
   margin-left: 0;
-}
-
-.friend-pagination a:first-child {
-  margin: 0;
-}
-
-.friend-pagination .page-active {
-  background-color: #f1cdb3;
-}
-
-.friend-pagination a {
-  text-decoration: none;
-  color: #292929;
-  line-height: 50px;
 }
 
 .modal {
@@ -859,8 +846,8 @@ to {
   background-image: url(../img/close.png);
   background-repeat: no-repeat;
   position: absolute;
-  top: 19px;
-  left: 19px;
+  top: 16px;
+  left: 16px;
 }
 
 .modal-window .pets-card {
