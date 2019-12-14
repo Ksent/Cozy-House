@@ -749,7 +749,7 @@ to {
 }
 
 .friend-pagination {
-  width: 370px;
+  width: 280px;
   margin: 0 auto;
   padding-bottom: 62px;
   padding-top: 26px;
@@ -763,14 +763,18 @@ to {
 
 .friend-pagination a,
 .friend-pagination li {
-  margin: 0;
+  margin-top: 0;
   display: inline-block;
   position: inherit;
-  margin-left: 15px;
 }
 
-.friend-pagination a:first-child {
-  margin: 0;
+.friend-pagination-pages {
+  margin-left: 13px;
+}
+
+.friend-pagination-pages:first-child,
+.friend-pagination-pages:last-child {
+  margin-left: 0;
 }
 
 .friend-pagination a {
@@ -783,13 +787,13 @@ to {
 }
 
 .friend-pagination-bullets {
-  width: 27px;
+  margin: 0 7px;
   border: none;	
   cursor: inherit;
 }
 
 .friend-pagination-bullets div {
-  width: 6px;
+  width: 5px;
   height: 5px;
   background-color: #f1cdb3;
   border-radius: 50%;
