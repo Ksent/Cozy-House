@@ -324,7 +324,7 @@ input[type="radio"] {
 
 #left:focus ~ label[for="left"],
 #right:focus ~ label[for="right"] {
-  outline: 1px dotted #4d90fe;
+  outline: 1px dotted #292929;
 }
 
 #left:checked ~ label[for="left"], 
